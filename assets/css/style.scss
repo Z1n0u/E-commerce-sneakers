@@ -1,6 +1,9 @@
 @import 'var';
 @import 'funct';
 
+html{
+    scroll-behavior: smooth;
+}
 body{
     
     padding: 0;
@@ -194,7 +197,7 @@ nav{
 }
 
 .product{
-    //height: 100vh;
+    //height: 120vh;
     display: flex;
     clip-path: polygon(0 13%, 100% 0, 100% 100%, 0 100%);
     background-color: whitesmoke;
@@ -208,6 +211,7 @@ nav{
     right:0%;
     width: 40%;
     padding: 50px;
+    
     .producttitle{
         font-weight: $size-text-bold;
         font-size: 90px;
@@ -255,6 +259,7 @@ nav{
         }
     }
 }
+
 .productbuybutton{
     position: absolute;
     right: 18%;
