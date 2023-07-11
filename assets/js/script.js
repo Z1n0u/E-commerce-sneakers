@@ -35,7 +35,7 @@ const products = [
     {
       id: 3,
       title: "Blazer",
-      price: 109,
+      price: 110,
       colors: [
         {
           code: "lightgray",
@@ -50,7 +50,7 @@ const products = [
     {
       id: 4,
       title: "Crater",
-      price: 129,
+      price: 140,
       colors: [
         {
           code: "black",
@@ -65,7 +65,7 @@ const products = [
     {
       id: 5,
       title: "Hippie",
-      price: 99,
+      price: 125,
       colors: [
         {
           code: "gray",
