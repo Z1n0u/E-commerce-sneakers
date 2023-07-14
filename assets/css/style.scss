@@ -4,6 +4,7 @@
 html{
     scroll-behavior: smooth;
 }
+
 body{
     
     padding: 0;
@@ -352,4 +353,94 @@ nav{
     color: white;
     cursor: pointer;
     padding: 2px;
+}
+.gallery{
+    padding: 50px;
+    display: flex;
+}
+.galleryItem{
+    /*display: flex;
+    flex-direction: column;*/
+    padding: 20px;
+    flex: 1;
+}
+.galleryImg{
+    width: 100%;
+}
+.newseason{
+    display: flex;
+}
+
+.nsitem{
+    flex: 1;
+    background-color: #111;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    .nsImg{
+        width: 100%;
+        height: 500px;
+    }
+
+    .nsbutton{
+        padding: 15px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}
+footer{
+    display: flex;
+    padding: 50px;
+    .footertitle{
+        font-size: 16px;
+    }
+    .leftfooter{
+        display: flex;
+        flex: 2;
+        justify-content: space-between;
+        padding: 0 50px;
+        .footerdet{
+            color: grey;
+            font-size: 16px;
+            font-weight: $size-text-light;
+        }
+    }
+    .rightfooter{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        .footerfollowus{
+            
+            display: flex;
+            flex-direction: column;
+            .followimgs{
+                display: flex;
+                .footerimg{
+                    padding-right: 10px;
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+        .inputfooter{
+            padding: 5px;
+        }
+        .footerbtn{
+            background: black;
+            color: white;
+            padding: 5px;
+            &:focus{
+                outline: none;
+            }
+        }
+        .copyright{
+            font-weight: 300;
+            font-size: 14px;
+        }
+    }
 }
