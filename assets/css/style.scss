@@ -52,22 +52,11 @@ nav{
 .navbottom{
     display: flex;
     justify-content: center;
-    
-        ul{
-            margin: 0;
-            padding: 0;
-            text-decoration: none;
-            list-style-type: none;
-            overflow: hidden;
-            display: flex;
-            flex-direction: row;
-            gap: 50px;
-            h3{
-                text-decoration: none;
-                color: $color-text-secondary;
-                font-weight: $size-text-regular;
-                cursor: pointer;
-            }
+        .menuitem{
+            margin-right: 50px;
+            color: $color-text-secondary;
+            font-weight: $size-text-regular;
+            cursor: pointer;
         }
     }
 
@@ -441,6 +430,25 @@ footer{
         .copyright{
             font-weight: 300;
             font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav{
+        padding: 20px;
+    }
+    .navtop{
+        .search{
+            display: none;
+        }
+    }
+    .navbottom{
+        flex-wrap: wrap;
+        .menuitem{
+            margin-right: 15px;
+            font-size: 20px;
+            font-weight: 700px;
         }
     }
 }

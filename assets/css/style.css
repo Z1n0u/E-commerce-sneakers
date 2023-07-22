@@ -52,18 +52,8 @@ nav {
   display: flex;
   justify-content: center;
 }
-.navbottom ul {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style-type: none;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
-}
-.navbottom ul h3 {
-  text-decoration: none;
+.navbottom .menuitem {
+  margin-right: 50px;
   color: lightgrey;
   font-weight: 400;
   cursor: pointer;
@@ -434,4 +424,21 @@ footer .rightfooter .footerbtn:focus {
 footer .rightfooter .copyright {
   font-weight: 300;
   font-size: 14px;
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    padding: 20px;
+  }
+  .navtop .search {
+    display: none;
+  }
+  .navbottom {
+    flex-wrap: wrap;
+  }
+  .navbottom .menuitem {
+    margin-right: 15px;
+    font-size: 20px;
+    font-weight: 700px;
+  }
 }/*# sourceMappingURL=style.css.map */
